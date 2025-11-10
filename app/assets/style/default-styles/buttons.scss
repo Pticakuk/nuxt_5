@@ -1,0 +1,49 @@
+// app buttons
+.v-application .v-application__wrap {
+  .v-btn.v-size--x-small:not(.v-btn--icon) {
+    min-height: 20px;
+    height: auto;
+    .v-btn__content {
+      padding: 0.125rem 0;
+    }
+  }
+    .v-btnv-size--small:not(.v-btn--icon) {
+    min-height: 28px;
+    height: auto;
+  }
+  .v-btn.v-size--default:not(.v-btn--icon) {
+    min-height: 40px;
+    height: auto;
+  }
+  .v-btn.v-size--large:not(.v-btn--icon) {
+    min-height: 44px;
+    height: auto;
+  }
+  .v-btn.v-size--x-large:not(.v-btn--icon) {
+    min-height: 48px;
+    height: auto;
+  }
+  .v-btn .v-btn__content {
+    max-width: 100%;
+    padding: 0.25rem 0;
+  }
+  .v-card__actions>.v-btn.v-btn:not(.v-btn--icon) {
+    padding: 0 16px;
+  }
+  .v-btn-toggle:not(.v-btn-toggle--group) .v-btn.v-btn .v-icon,
+  .v-theme--light.v-btn-toggle:not(.v-btn-toggle--group)
+  {
+    color: inherit;
+  }
+  .v-btn-toggle:not(.v-btn-toggle--group) .v-btn.v-btn:not(.v-btn--disabled) {
+    border-color: inherit !important;
+  }
+  .v-btn.v-btn--icon {
+    background: transparent !important;
+    border-radius: 50%;
+    color: rgb(var(--v-theme-primary)) !important;
+    height: var(--v-btn-height);
+    width: var(--v-btn-height);
+    box-shadow: none;
+  }
+}

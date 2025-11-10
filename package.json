@@ -1,0 +1,49 @@
+{
+  "name": "nuxt-app",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "dev": "nuxt dev",
+    "staging": "cross-env API_URL=https://staging.theworkademy.com IS_STAGING=true NODE_OPTIONS=--max-old-space-size=8192 nuxt dev",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "preview": "nuxt preview",
+    "generate": "cross-env NODE_OPTIONS=--max-old-space-size=8192 nuxt generate",
+    "cypress:open": "cypress open",
+    "test": "npx cypress run",
+    "lint": "eslint . --ext .ts,.js,.vue --ignore-path .eslintignore",
+    "todo": "eslint . --ext .ts,.js,.vue --ignore-path .eslintignore --format=todo --output-file \".eslintrc_todo.js\""
+  },
+  "dependencies": {
+    "@mdi/font": "^7.4.47",
+    "@nuxtjs/critters": "^0.9.0",
+    "@nuxtjs/i18n": "^10.1.0",
+    "@pinia/nuxt": "^0.11.2",
+    "autoprefixer": "^10.4.21",
+    "click-outside-vue3": "^4.0.1",
+    "cross-env": "^7.0.3",
+    "humanize-duration": "^3.33.1",
+    "lodash": "^4.17.21",
+    "moment": "^2.30.1",
+    "nuxt": "^4.1.2",
+    "pinia": "^3.0.3",
+    "pinia-plugin-persistedstate": "^4.5.0",
+    "postcss": "^8.5.6",
+    "tailwindcss": "^3.4.14",
+    "tinycolor2": "^1.6.0",
+    "vue": "^3.5.22",
+    "vue-router": "^4.5.1",
+    "vue3-runtime-template": "^1.0.2"
+  },
+  "devDependencies": {
+    "@types/humanize-duration": "^3",
+    "@types/lodash": "^4",
+    "@types/node": "^24.6.2",
+    "@types/tinycolor2": "^1",
+    "@vite-pwa/nuxt": "^1.0.5",
+    "sass-embedded": "^1.93.2",
+    "vite-plugin-compression": "^0.5.1",
+    "vite-plugin-vuetify": "^2.1.2",
+    "vuetify": "^3.10.3"
+  }
+}

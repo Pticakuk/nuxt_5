@@ -1,0 +1,4 @@
+export default {
+  IMAGE: 'IMAGE',
+  TEXT_COMPLETION: 'TEXT_COMPLETION'
+}

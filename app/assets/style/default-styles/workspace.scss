@@ -1,0 +1,87 @@
+// Hero section
+.v-application {
+  .hero-section,
+  .parallax-section {
+    width: 100%;
+    background: black;
+    position: relative;
+    .hero__container,
+    .parallax__container {
+      position: relative;
+      z-index: 3;
+    }
+    .hero-content-center {
+      align-items: center;
+    }
+    .hero__image,
+    .hero__parallax {
+      position: absolute;
+      right: 0;
+      top:0;
+      height: 100%;
+      z-index: 1;
+      background-size: cover;
+      background-color: var(--v-primary-base);
+      background-blend-mode: luminosity;
+      opacity: 0.5;
+      &::after {
+        content: '';
+        position: absolute;
+        z-index: 1;
+        width: 100%;
+        height: 100%;
+        background-image: linear-gradient(to right, black, rgba(0, 0, 0, 0) 25%, rgba(0, 0, 0, 0));
+
+      }
+    }
+    .hero__title {
+      color: white;
+      width: 100%;
+    }
+    .hero-button {
+      max-width: 17.5rem;
+    }
+  }
+}
+
+//Parallax section
+.parallax-section {
+  .parallax__title {
+    color: white;
+  }
+  .hero__parallax {
+    right: auto;
+    left: 0;
+    &::after {
+      background-image: linear-gradient(to left, black, rgba(0, 0, 0, 0) 25%, rgba(0, 0, 0, 0));
+
+    }
+  }
+}
+@media (max-width: 959px) {
+  // Hero section
+  .hero-section,
+  .parallax-section {
+    .hero__container,
+    .parallax__container {
+      min-height: 300px;
+    }
+  }
+  .VueCarousel-dot {
+    margin-top: 0px !important;
+  }
+}
+@media (max-width: 599px) {
+  // Hero section
+  .hero-section,
+  .parallax-section {
+    .hero__image,
+    .hero__parallax {
+      width: 100%;
+      &::after {
+        background-image: linear-gradient(to top, black, rgba(0, 0, 0, 0) 70%, rgba(0, 0, 0, 0));
+
+      }
+    }
+  }
+}

@@ -1,0 +1,195 @@
+/*
+ * app.css
+ * The copyright of this file belongs to Workademy GmbH. The file cannot be
+ * reproduced in whole or in part, stored in a retrieval system, transmitted
+ * in any form, or by any means electronic, mechanical, or otherwise, without
+ * the prior permission of the owner. Please refer to the terms of the license
+ * agreement.
+ *
+ * (c) 2020 Workademy GmbH, Rights Reserved.
+ *
+ * olga
+ * 26/07/2020, 13:35
+ */
+
+/* Tailwind init */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/*TODO: Check and remove next code */
+/* base settings for LIGHT theme */
+/* Import our CSS */
+.v-theme--light.v-application {
+  color: rgba(0, 0, 0, 0.8);
+  position: relative;
+  -webkit-font-smoothing: antialiased;
+  background: #fff;
+}
+
+.v-theme--light.v-footer {
+  background-color: #fff !important;
+}
+
+/* base settings for DARK theme */
+
+.list.pa-0, .v-list.pa-0 {
+  width: 100%;
+}
+
+.list__group__header > div {
+  width: 80%;
+}
+
+.v-application .change-media-overlay .plyr__video-embed iframe {
+  position: static !important;
+}
+
+.v-application code {
+  background-color: inherit;
+  color: inherit;
+  box-shadow: none;
+}
+
+.v-application code {
+  display: inherit;
+  border-radius: none;
+  white-space: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+.v-application code:after, .v-application code:before {
+  content: "";
+}
+
+.keep-all {
+  word-break: keep-all !important;
+}
+
+.v-card__title {
+  word-break: keep-all !important;
+}
+
+.absolute-n30 {
+  position: absolute !important;
+  top: -10px;
+  right: -30px;
+}
+
+.absolute-0 {
+  position: absolute !important;
+  top: 0;
+  right: 0;
+}
+
+.absolute-bottom-0 {
+  position: absolute !important;
+  bottom: 0;
+  right: 0;
+}
+
+.absolute-25 {
+  position: absolute !important;
+  top: 0;
+  right: 25px;
+}
+
+.absolute-20 {
+  position: absolute !important;
+  top: 0;
+  right: 20px;
+}
+
+.absolute-40 {
+   position: absolute !important;
+   top: 0;
+   right: 40px;
+ }
+
+.absolute-60 {
+  position: absolute !important;
+  top: 0;
+  right: 60px;
+}
+
+.absolute-30 {
+  position: absolute !important;
+  top: 0;
+  right: 30px;
+}
+
+.absolute-15 {
+  position: absolute !important;
+  top: 0;
+  right: 15px;
+}
+
+.absolute-right30 {
+  position: absolute !important;
+  right: 30px;
+}
+
+.absolute-right0 {
+  position: absolute !important;
+  right: 0;
+}
+
+.absolute-right10 {
+  position: absolute !important;
+  right: 10px;
+}
+
+.absolute-right15 {
+  position: absolute !important;
+  right: 15px;
+}
+
+.absolute-right20 {
+  position: absolute !important;
+  right: 20px;
+}
+
+.absolute-top10-right10 {
+  position: absolute !important;
+  right: 5px;
+  top: 20px;
+  z-index: 4;
+}
+
+.v-tour__target--highlighted, .v-tour .v-step {
+  z-index: 5 !important;
+}
+
+.v-tour__target--highlighted {
+  box-shadow: 0 0 0 99999px rgba(0, 0, 0, .4);
+}
+
+/* cke editor */
+.cke_inner {
+  background-color: transparent !important;
+}
+
+/* speed dialogs */
+.v-speed-dial--absolute, .v-speed-dial--fixed {
+  z-index: 3 !important;
+}
+
+/* image upload overlay */
+.image-upload__overlay .v-overlay__content {
+  width: 100% !important;
+  height: 100% !important;
+}
+/* override tailwind stupidity with list style none */
+menu, ul, li {
+  list-style: initial;
+}
+
+.v-application ol, .v-application ol li {
+  list-style: decimal;
+}
+/* plyr primary color */
+:root {
+  --plyr-color-main: var(--v-primary-base);
+}
+

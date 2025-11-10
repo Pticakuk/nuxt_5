@@ -1,0 +1,42 @@
+export default {
+  STRIPE: 'STRIPE',
+  REVOLUT: 'REVOLUT',
+  MONOBANK: 'MONOBANK',
+  LIQPAY: 'LIQPAY'
+}
+
+export const CURRENCY_MAPPING = {
+  EUR: 'EUR',
+  USD: 'USD',
+  UAH: 'UAH'
+}
+
+export const CURRENCY_SYMBOLS = {
+  [CURRENCY_MAPPING.EUR]: '€',
+  [CURRENCY_MAPPING.USD]: '$',
+  [CURRENCY_MAPPING.UAH]: '₴'
+}
+
+export const currencyItems = [
+  {
+    text: CURRENCY_MAPPING.EUR,
+    value: CURRENCY_MAPPING.EUR,
+    symbol: CURRENCY_SYMBOLS[CURRENCY_MAPPING.EUR]
+  },
+  {
+    text: CURRENCY_MAPPING.USD,
+    value: CURRENCY_MAPPING.USD,
+    symbol: CURRENCY_SYMBOLS[CURRENCY_MAPPING.USD]
+  },
+  {
+    text: CURRENCY_MAPPING.UAH,
+    value: CURRENCY_MAPPING.UAH,
+    symbol: CURRENCY_SYMBOLS[CURRENCY_MAPPING.UAH]
+  }
+]
+
+export const PAYMENT_STATUSES = {
+  SUCCEEDED: 'SUCCEEDED',
+  SUCCESS: 'SUCCESS',
+  COMPLETED: 'COMPLETED'
+}

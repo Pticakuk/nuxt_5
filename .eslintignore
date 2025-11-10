@@ -1,0 +1,13 @@
+yarn-error.log
+*.iml
+.idea
+target
+node_modules
+.nuxt
+.DS_Store
+node
+dist
+yarn.lock
+tests/e2e/out
+static
+workspaces-assets

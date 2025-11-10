@@ -1,0 +1,21 @@
+$vuetify-theme-colors: (
+  primary: 'primary',
+  secondary: 'secondary',
+  error: 'error',
+  warning: 'warning',
+  success: 'success',
+  info: 'info'
+);
+
+.v-application {
+  @each $name, $var in $vuetify-theme-colors {
+    .#{$name}--text {
+      color: rgb(var(--v-theme-#{$var})) !important;
+      caret-color: rgb(var(--v-theme-#{$var})) !important;
+    }
+    .#{$name} {
+      background-color: rgb(var(--v-theme-#{$var})) !important;
+      border-color: rgb(var(--v-theme-#{$var})) !important;
+    }
+  }
+}

@@ -1,0 +1,15 @@
+yarn-error.log
+*.iml
+.idea
+target
+node_modules
+.nuxt
+.output
+.DS_Store
+node
+dist
+tests/e2e/out
+static/workspaces-assets
+cypress/screenshots
+cypress/videos
+.vscode

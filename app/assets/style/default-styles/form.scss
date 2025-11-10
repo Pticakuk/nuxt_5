@@ -1,0 +1,124 @@
+// text field
+.v-text-field {
+  .v-input__slot {
+    min-height: 3.5rem !important;
+  }
+
+  &.v-input--is-label-active,
+  &.v-input--has-state,
+  &.v-input--is-focused {
+    fieldset {
+      border-width: 1px !important;
+    }
+  }
+  &.v-input--is-focused {
+    fieldset {
+      border-width: 1px !important;
+    }
+  }
+}
+.v-text-field.v-text-field--outlined.v-input--dense {
+  .v-label:not(.v-label--active) {
+    top: 1.125rem;
+  }
+}
+
+.v-input--is-disabled {
+  opacity: 0.8;
+}
+.v-input__prepend-inner {
+  margin: auto 0 !important;
+}
+.v-input__slot {
+  p {
+    margin-bottom: 0;
+  }
+}
+// textarea
+.v-text-field.v-textarea {
+  .v-input__slot {
+    min-height: 3.5rem !important;
+  }
+}
+// select field
+.v-select {
+  .v-select__slot {
+    min-height: 3.5rem !important;
+  }
+  &.v-input--is-disabled {
+    .v-input__slot {
+      &::before {
+        border-image: none !important;
+      }
+    }
+  }
+}
+.v-input--radio-group {
+  .v-input__slot {
+    margin-bottom: 0 !important;
+  }
+}
+.v-select.v-select--chips:not(.v-text-field--single-line).v-text-field--box .v-select__selections, 
+.v-select.v-select--chips:not(.v-text-field--single-line).v-text-field--enclosed .v-select__selections {
+  min-height: 56px;
+}
+// tabs
+.v-tabs > .v-tabs-bar {
+  background: none !important;
+}
+
+// course search field
+.course-search-filters-condensed,
+.user-search-filter {
+  .has-filter {
+    .v-input__icon--clear {
+      margin-right: 32px;
+    }
+  }
+  .is-ai-search-field {
+    .mdi-robot-outline::before {
+      margin-top: -0.25rem;
+      margin-left: -0.125rem;
+    }
+  }
+}
+
+.v-label,
+.v-input {
+  font-size: 1rem;
+}
+.v-input .v-label {
+  height: 1.25rem;
+  line-height: 1.25rem;
+}
+.v-text-field--outlined .v-label {
+  top: 1.125rem;
+}
+.v-text-field--outlined .v-label--active {
+  transform: translateY(-1.5rem) scale(.75);
+}
+/* date time picker */
+.v-picker--date {
+  .v-picker__title{
+    border-radius: 0 !important;
+  }
+}
+
+/* autocomplete */
+
+.v-autocomplete__content {
+  .v-list-item__title {
+    p {
+      margin: 0;
+    }
+  }
+  .v-subheader {
+    background: #efefef;
+    color: #121212;
+    font-weight: 500;
+    &.v-theme--dark {
+      background: #121212;
+      color: white
+    }
+  }
+}
