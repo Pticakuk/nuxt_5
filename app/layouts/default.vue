@@ -62,7 +62,6 @@ import { useTheme } from 'vuetify'
 import { useRoute } from 'vue-router'
 import { useCourseStore } from '~/stores/course'
 import { useTemplatesStore } from '~/stores/templates'
-import { useProfileStore } from '~/stores/profile'
 import { useUiStore } from '~/stores/ui'
 import { INSIDE_MAIN_COURSE_PAGE, INSIDE_COURSE_ROUTES } from '~/utils/utils'
 import Drawer from '~/components/drawer/global_drawer/Drawer.vue'
@@ -79,7 +78,6 @@ const route = useRoute()
 const courseStore = useCourseStore()
 const templatesStore = useTemplatesStore()
 const uiStore = useUiStore()
-const profileStore = useProfileStore()
 const isHtmlCourseTemplate = computed(() => templatesStore.isHtmlCourseTemplate)
 const courseTemplateIsLoading = computed(() => templatesStore.courseTemplateIsLoading)
 const userDrawerOpen = computed(() => uiStore.userDrawerOpen)
@@ -112,13 +110,4 @@ onMounted(async () => {
     loadingProfile.value = false
   }
 })
-useHead(() => ({
-  link: [
-    {
-      rel: 'icon',
-      type: 'image/x-icon',
-      href: profileStore.profile?.favicon || 'https://assets.theworkademy.com/workspaces/f5b250d1-d45a-4410-98bf-09a8eb1c35b2/assets/favicon.ico'
-    }
-  ]
-}))
 </script>

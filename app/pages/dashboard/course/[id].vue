@@ -220,21 +220,6 @@ onMounted(async () => {
     router.push('/courses')
   }
 })
-useHead(() => {
-  const courseTitle = userCourse.value.name
-    ? fixHtml(userCourse.value.name)
-    : ''
-
-  return {
-    title: courseTitle ? `${courseTitle} | Workademy` : 'Workademy',
-    meta: [
-      {
-        name: 'description',
-        content: 'Welcome to Academy - Your trusted learning platform for retirement planning and insurance guidance.'
-      }
-    ]
-  }
-})
 </script>
 
 <style scoped>

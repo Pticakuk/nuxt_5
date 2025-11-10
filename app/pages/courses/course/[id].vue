@@ -66,13 +66,7 @@ useHead(() => {
     : ''
 
   return {
-    title: courseTitle ? `${courseTitle} | Workademy` : 'Workademy',
-    meta: [
-      {
-        name: 'description',
-        content: 'Welcome to Academy - Your trusted learning platform for retirement planning and insurance guidance.'
-      }
-    ]
+    title: courseTitle ? `${courseTitle} | Workademy` : 'Workademy'
   }
 })
 </script>

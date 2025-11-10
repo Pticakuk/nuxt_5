@@ -14,9 +14,9 @@
     "lint": "eslint . --ext .ts,.js,.vue --ignore-path .eslintignore",
     "todo": "eslint . --ext .ts,.js,.vue --ignore-path .eslintignore --format=todo --output-file \".eslintrc_todo.js\""
   },
+    "packageManager": "yarn@4.9.1",
   "dependencies": {
     "@mdi/font": "^7.4.47",
-    "@nuxtjs/critters": "^0.9.0",
     "@nuxtjs/i18n": "^10.1.0",
     "@pinia/nuxt": "^0.11.2",
     "autoprefixer": "^10.4.21",
@@ -40,9 +40,7 @@
     "@types/lodash": "^4",
     "@types/node": "^24.6.2",
     "@types/tinycolor2": "^1",
-    "@vite-pwa/nuxt": "^1.0.5",
     "sass-embedded": "^1.93.2",
-    "vite-plugin-compression": "^0.5.1",
     "vite-plugin-vuetify": "^2.1.2",
     "vuetify": "^3.10.3"
   }
